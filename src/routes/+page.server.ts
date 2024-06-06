@@ -21,12 +21,12 @@ export const load: PageServerLoad = async ({ locals }) => {
 	};
 };
 
-/** @type {import('./$types').Actions} */
-export const actions = {
-	onSubmit: async ({ request, locals: { db } }) => {
-		const data = await request.formData();
-		const uname = data.get('uname');
+// /** @type {import('./$types').Actions} */
+// export const actions = {
+// 	onSubmit: async ({ request, locals: { db } }) => {
+// 		const data = await request.formData();
+// 		const uname = data.get('uname');
 
-		db.exec('INSERT INTO users (id, username) VALUES (NULL, "Jimboy")');
-	}
-};
+// 		db.exec('INSERT INTO users (id, username) VALUES (NULL, "Jimboy")');
+// 	}
+// };
